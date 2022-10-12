@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+  
+.container {
+    flex-grow: 1;
+    display: flex;
+    border: 1px dashed lightskyblue;
+}
+
+.main-container {
+    flex-grow: 1;
+    background-color: #141922;
+    border: 1px dashed lightskyblue;
+}
+  
+.footer-navbar {
+    flex-shrink: 0;
+    height: 100px;
+    background-color: #282828;
+    border: 1px dashed lightskyblue;
+}
+  
+.sidebar {
+    width: 60px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    border: 1px dashed lightskyblue;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    border: 1px dashed lightskyblue;
+}
+ 
+.sidebar .top-section {
+    flex-shrink: 0;
+}
+  
+.sidebar .mid-section {
+    flex-grow: 1;
+    overflow: auto;
+}
+  
+.sidebar .mid-section .playlist-container {
+    display: none;
+}
+  
+.sidebar .bot-section {
+    flex-shrink: 0;
+}
+  
+.sidebar .sidebar-list {
+    list-style: none;
+}
+  
+.sidebar .sidebar-list .logo-l {
+    display: none;
+}
+
+.sidebar .sidebar-list .logo-s {
+    display: block;
+}
+  
+.sidebar .sidebar-list a {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+  
+.sidebar .sidebar-list .list-item-txt {
+    display: none;
+}
+
+.sidebar .sidebar-list .list-item-icon {
+    display: block;
+    width: 10%;
+}
+
+.main-container .main-navbar {
+    background-color: #080B12;
+    color: white;
+    padding: 2rem;
+}
+
+
+@media screen and (min-width: 568px) {
+    .sidebar {
+      width: 250px;
+    }
+
+    .sidebar .sidebar-list .logo-l {
+        display: block;
+    }
+
+    .sidebar .sidebar-list .logo-s {
+        display: none;
+    }
+
+    .sidebar .sidebar-list .list-item-txt {
+        display: block;
+    }
+
+    .sidebar .mid-section .playlist-container {
+        display: block;
+    }
+  
+    .sidebar .sidebar-list a {
+        justify-content: flex-start;
+    }
+    
+    .sidebar .sidebar-list .list-item-icon {
+        margin-right: 1rem;
+    }
+}
+  
+@media screen and (min-width: 768px) {}
+  
+@media screen and (min-width: 992px) {}
