@@ -162,6 +162,10 @@ ul li {
     color: #ffffff7a;
 }
 
+.main-container .row-container .row-title h2 ~ div {
+    color: #ffffff7a;
+}
+
 .main-container .row-container {
     padding-top: 2.5rem;
     padding-left: 1.5rem;
@@ -225,12 +229,20 @@ ul li {
     padding-left: 1rem;
 }
 
+.padd-bt- {
+    padding-bottom: 0.5rem;
+}
+
 .padd-bt {
     padding-bottom: 1rem;
 }
 
 .padd-tp {
     padding-top: 0.5rem;
+}
+
+.padd-tp-2 {
+    padding-top: 2rem
 }
 
 .padd-bt-2 {
@@ -268,6 +280,10 @@ ul li {
 .display-f {
     display: flex;
     justify-content: center;
+}
+
+.img-circle {
+    border-radius: 50%;
 }
 
 .footer-navbar .footer-container .footer-card {
