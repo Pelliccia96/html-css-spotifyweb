@@ -136,6 +136,49 @@ ul li {
     border-bottom: 1px solid green;
 }
 
+.main-container {
+    overflow: auto;
+}
+
+.main-container .row-container {
+    overflow: auto;
+}
+
+.main-container .row-container .row {
+    overflow: auto;
+}
+
+.main-container .row-container .row-title {
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.main-container .row-container .row h4 {
+    color: white;
+    padding-bottom: 0.5rem;
+}
+
+.main-container .row-container .row h4 ~ div {
+    color: #ffffff7a;
+}
+
+.main-container .row-container {
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+}
+
+.main-container .row-container .row .col-1_2 {
+    flex-basis: 50%
+}
+
+.row-container .row .card-container .card-img {
+    width: 100%;
+}
+
+.row-container .row .card-container .card-txt {
+    text-align: center;
+}
+
 .mid-section .playlist-container i {
     background-color: #ffffff7a;
     color: black;
@@ -186,12 +229,24 @@ ul li {
     padding-bottom: 1rem;
 }
 
+.padd-tp {
+    padding-top: 0.5rem;
+}
+
 .padd-bt-2 {
     padding-bottom: 2rem;
 }
 
 .padd-bt-2-s {
     padding-bottom: 1rem;
+}
+
+.padd-tpbt {
+    padding: 0.5rem 0;
+}
+
+.padd-rx {
+    padding-right: 1rem;
 }
 
 .marg-lx {
@@ -312,6 +367,14 @@ ul li {
     }
 }
   
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .main-container .row-container .row .col-md-1_4 {
+        flex-basis: calc(100% / 4);
+    }
+}
   
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    .main-container .row-container .row .col-lg-1_6 {
+        flex-basis: calc(100% / 6);
+    }
+}
