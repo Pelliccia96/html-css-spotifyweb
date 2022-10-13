@@ -10,11 +10,21 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+img {
+    width: 100%;
+    display: block;
+}
   
 .container {
     flex-grow: 1;
     display: flex;
     border: 1px dashed lightskyblue;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main-container {
@@ -72,6 +82,7 @@ body {
 
 .sidebar .sidebar-list .logo-s {
     display: block;
+    padding: 0.5rem;
 }
   
 .sidebar .sidebar-list a {
@@ -106,6 +117,29 @@ body {
     padding-bottom: 1rem;
 }
 
+.bot-section .bot-container i {
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 0.2rem;
+}
+
+.bot-section .bot-user img {
+    width: 30px;
+    background-color: grey;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.bot-section .bot-user .user-txt {
+    display: none;
+}
+
+.bot-section .bot-container .bot-user {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
 .txt-color-grey {
     color: #ffffff7a;
 }
@@ -124,6 +158,23 @@ body {
 
 .marg-lx {
     margin-left: 1rem;
+}
+
+.bot-bord {
+    display: none;
+}
+
+.font-size-s {
+    font-size: 0.8rem;
+}
+
+.display- {
+    display: none;
+}
+
+.display-f {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -157,8 +208,50 @@ body {
         margin-right: 1rem;
     }
 
+    .bot-section .bot-user .user-txt {
+        display: block;
+        font-weight: bold;
+    }
+    
+    .bot-bord {
+        border-bottom: 1px solid;
+        padding-top: 0.5rem;
+        display: block;
+    }  
+    
+    .bot-section .bot-container .bot-user {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+    }    
+
+    .padd-s {
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    .padd-dxlx-s {
+        padding: 0 1rem;
+    }
+
+    .padd-bt-s {
+        padding-bottom: 0.5rem;
+    }
+
     .padd-lx-s {
-        padding-left: 1rem;
+        padding-left: 0.5rem;
+    }
+
+    .padd-tp-s {
+        padding-top: 1rem;
+    }
+
+    .display- {
+        display: inline-block;
+    }
+
+    .display-f {
+        display: block;
     }
 }
   
