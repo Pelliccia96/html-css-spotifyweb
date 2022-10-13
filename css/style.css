@@ -23,7 +23,6 @@ ul li {
 .container {
     flex-grow: 1;
     display: flex;
-    border: 1px dashed lightskyblue;
 }
 
 .row {
@@ -34,14 +33,12 @@ ul li {
 .main-container {
     flex-grow: 1;
     background-color: #141922;
-    border: 1px dashed lightskyblue;
 }
   
 .footer-navbar {
     flex-shrink: 0;
     height: 100px;
     background-color: #282828;
-    border: 1px dashed lightskyblue;
 }
   
 .sidebar {
@@ -51,12 +48,16 @@ ul li {
     flex-direction: column;
     background-color: black;
     color: white;
-    border: 1px dashed lightskyblue;
 }
 
-.container ul li a {
-    color: white;
+.container a {
+    color: #ffffff7a;
     text-decoration: none;
+}
+
+.container .sidebar .top-section .sidebar-list :nth-child(2) a {
+    color: white;
+    border-left: 2px solid green;
 }
  
 .sidebar .top-section {
@@ -118,6 +119,7 @@ ul li {
 .main-container .main-mid ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main-container .main-mid ul li {
@@ -128,6 +130,10 @@ ul li {
 .main-container .main-mid ul li a {
     color: #ffffff7a;
     font-weight: bold;
+}
+
+.main-container .main-mid ul li:first-child a {
+    border-bottom: 1px solid green;
 }
 
 .mid-section .playlist-container i {
@@ -207,6 +213,21 @@ ul li {
 .display-f {
     display: flex;
     justify-content: center;
+}
+
+.footer-navbar .footer-container .footer-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer-navbar .footer-container .footer-img {
+    width: 60px;
+}
+
+.footer-navbar .footer-container .footer-card .footer-txt {
+    color: white;
+    padding-left: 0.5rem;
 }
 
 
