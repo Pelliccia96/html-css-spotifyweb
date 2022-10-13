@@ -15,6 +15,10 @@ img {
     width: 100%;
     display: block;
 }
+
+ul li {
+    list-style: none;
+}
   
 .container {
     flex-grow: 1;
@@ -50,7 +54,7 @@ img {
     border: 1px dashed lightskyblue;
 }
 
-.sidebar ul li a {
+.container ul li a {
     color: white;
     text-decoration: none;
 }
@@ -71,11 +75,7 @@ img {
 .sidebar .bot-section {
     flex-shrink: 0;
 }
-  
-.sidebar .sidebar-list {
-    list-style: none;
-}
-  
+ 
 .sidebar .sidebar-list .logo-l {
     display: none;
 }
@@ -104,6 +104,30 @@ img {
     background-color: #080B12;
     color: white;
     padding: 2rem;
+}
+
+.main-container .main-navbar button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.main-container .main-mid ul {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container .main-mid ul li {
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+}
+
+.main-container .main-mid ul li a {
+    color: #ffffff7a;
+    font-weight: bold;
 }
 
 .mid-section .playlist-container i {
@@ -144,6 +168,10 @@ img {
     color: #ffffff7a;
 }
 
+.txt-align-e {
+    text-align: end;
+}
+
 .padd-lx {
     padding-left: 1rem;
 }
@@ -154,6 +182,10 @@ img {
 
 .padd-bt-2 {
     padding-bottom: 2rem;
+}
+
+.padd-bt-2-s {
+    padding-bottom: 1rem;
 }
 
 .marg-lx {
@@ -224,7 +256,11 @@ img {
         justify-content: flex-start;
         align-items: center;
         padding: 0;
-    }    
+    } 
+    
+    .padd-bt-2-s {
+        padding-bottom: 2rem;
+    }
 
     .padd-s {
         padding: 1rem 1rem 1rem 0;
