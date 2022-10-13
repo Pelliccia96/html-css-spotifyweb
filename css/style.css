@@ -43,7 +43,6 @@ body {
 .sidebar ul li a {
     color: white;
     text-decoration: none;
-    border: 1px dashed lightskyblue;
 }
  
 .sidebar .top-section {
@@ -77,8 +76,8 @@ body {
   
 .sidebar .sidebar-list a {
     display: flex;
-    padding: 1rem;
     justify-content: center;
+    align-items: center;
 }
   
 .sidebar .sidebar-list .list-item-txt {
@@ -87,13 +86,44 @@ body {
 
 .sidebar .sidebar-list .list-item-icon {
     display: block;
-    width: 10%;
+    width: 30px;
 }
 
 .main-container .main-navbar {
     background-color: #080B12;
     color: white;
     padding: 2rem;
+}
+
+.mid-section .playlist-container i {
+    background-color: #ffffff7a;
+    color: black;
+    padding: 0.3rem;
+    font-size: 1.3rem;
+}
+
+.mid-section .playlist-container ul li {
+    padding-bottom: 1rem;
+}
+
+.txt-color-grey {
+    color: #ffffff7a;
+}
+
+.padd-lx {
+    padding-left: 1rem;
+}
+
+.padd-bt {
+    padding-bottom: 1rem;
+}
+
+.padd-bt-2 {
+    padding-bottom: 2rem;
+}
+
+.marg-lx {
+    margin-left: 1rem;
 }
 
 
@@ -104,6 +134,7 @@ body {
 
     .sidebar .sidebar-list .logo-l {
         display: block;
+        width: 80%;
     }
 
     .sidebar .sidebar-list .logo-s {
@@ -124,6 +155,10 @@ body {
     
     .sidebar .sidebar-list .list-item-icon {
         margin-right: 1rem;
+    }
+
+    .padd-lx-s {
+        padding-left: 1rem;
     }
 }
   
