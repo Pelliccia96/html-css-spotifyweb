@@ -50,6 +50,14 @@ ul li {
     color: white;
 }
 
+.container a:hover, .container a > div:hover, .main-container .main-mid a:hover{
+    color: white;
+}
+
+.container .main-container .main-navbar button:hover {
+    padding: 1rem 2.5rem;
+}
+
 .container a {
     color: #ffffff7a;
     text-decoration: none;
@@ -177,10 +185,29 @@ ul li {
 
 .row-container .row .card-container .card-img {
     width: 100%;
+    position: relative;
 }
 
 .row-container .row .card-container .card-txt {
     text-align: center;
+}
+
+.row-container .row .card-container .card-img .img-overlay {
+    display: none;
+}
+
+.row-container .row .card-container .card-img:hover .img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 5rem;
+    color: white;
+    background-color: rgba(0 0 0 / 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mid-section .playlist-container i {
@@ -263,6 +290,10 @@ ul li {
 
 .marg-lx {
     margin-left: 1rem;
+}
+
+.marg-bt {
+    margin-bottom: 1rem;
 }
 
 .bot-bord {
