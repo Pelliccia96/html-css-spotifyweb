@@ -359,22 +359,18 @@ ul li {
 .footer-navbar .footer-container .footer-card .footer-txt,
 .footer-navbar .footer-container .footer-card > span {
     color: white;
-    padding-left: 1rem;
+    padding: 0 0.5rem;
 }
 
 .footer-navbar .footer-container .footer-card .footer-subtxt {
     color: var(--color-txt-secondary);
 }
 
-.footer-navbar .progress-container {
-    padding: 1rem;
-    position: relative;
-}
-
 .footer-navbar .progress-container .progress-bg {
     height: 10px;
     border-radius: 5px;
     border-color: lightgrey;
+    width: 100px;
 }
 
 .footer-navbar .progress-container .progress-bg .progress-overlay {
@@ -382,6 +378,19 @@ ul li {
     border-radius: 5px;
     background-color: white;
     width: 20px;
+}
+
+.footer-navbar .footer-container .footer-card span:hover {
+    transform: scale(1.2);
+}
+
+.footer-navbar .footer-container .footer-card .txt-color-grey > div:hover {
+    color: white;
+}
+
+.footer-navbar .footer-container .footer-card span:hover,
+.footer-navbar .footer-container .footer-card .txt-color-grey > div:hover {
+    cursor: pointer;
 }
 
 
@@ -465,9 +474,11 @@ ul li {
         display: block;
     }
 
+    
+    .footer-navbar .footer-container .footer-card .footer-txt,
     .footer-navbar .footer-container .footer-card > span {
         color: white;
-        padding-left: 2rem;
+        padding: 0 1rem;
     }
 }
   
