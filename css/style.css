@@ -58,9 +58,9 @@ ul li {
 }
 
 .container .main-container .main-navbar button:hover {
-    padding: 1.2rem 3rem;
     background-color: rgba(255 255 255 / 50%);
     border: 2px solid white;
+    transform: scale(1.2);
 }
 
 .container a {
@@ -148,6 +148,7 @@ ul li {
 .main-container .main-mid ul li a {
     color: #ffffff7a;
     font-weight: bold;
+    font-size: 12px;
 }
 
 .main-container .main-mid ul li:first-child a {
@@ -421,10 +422,18 @@ ul li {
     .main-container .row-container .row .col-md-1_4 {
         flex-basis: calc(100% / 4);
     }
+
+    .main-container .main-mid ul li a {
+        font-size: 14px;
+    }
 }
   
 @media screen and (min-width: 992px) {
     .main-container .row-container .row .col-lg-1_6 {
         flex-basis: calc(100% / 6);
+    }
+
+    .main-container .main-mid ul li a {
+        font-size: 16px;
     }
 }
