@@ -308,6 +308,11 @@ ul li {
     border-radius: 50%;
 }
 
+.img-circle-hid {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .footer-navbar .footer-container .footer-card {
     display: flex;
     align-items: center;
