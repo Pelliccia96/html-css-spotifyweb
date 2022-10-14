@@ -244,6 +244,11 @@ ul li {
     padding: 0.5rem;
 }
 
+.bot-section .bot-container > *:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .txt-color-grey {
     color: var(--color-txt-secondary);
 }
@@ -366,18 +371,44 @@ ul li {
     color: var(--color-txt-secondary);
 }
 
+.footer-navbar .progress-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-navbar .progress-container .progress-txt {
+    color: white;
+    padding: 0 1rem;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .footer-navbar .progress-container .progress-bg {
-    height: 10px;
+    height: 5px;
     border-radius: 5px;
-    border-color: lightgrey;
-    width: 100px;
+    background-color: gray;
+    width: 400px;
 }
 
 .footer-navbar .progress-container .progress-bg .progress-overlay {
-    height: 10px;
+    height: 5px;
     border-radius: 5px;
     background-color: white;
-    width: 20px;
+    width: 100px;
+}
+
+.footer-navbar .progress-container2 .progress-bg2 {
+    height: 5px;
+    border-radius: 5px;
+    background-color: gray;
+    width: 80px;
+}
+
+.footer-navbar .progress-container2 .progress-bg2 .progress-overlay2 {
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    width: 30px;
 }
 
 .footer-navbar .footer-container .footer-card span:hover {
