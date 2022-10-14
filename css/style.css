@@ -23,6 +23,7 @@ ul li {
 .container {
     flex-grow: 1;
     display: flex;
+    overflow: auto;
 }
 
 .row {
@@ -33,6 +34,7 @@ ul li {
 .main-container {
     flex-grow: 1;
     background-color: #141922;
+    overflow: auto;
 }
   
 .footer-navbar {
@@ -48,6 +50,7 @@ ul li {
     flex-direction: column;
     background-color: black;
     color: white;
+    overflow: auto;
 }
 
 .container a:hover, .container a > div:hover, .main-container .main-mid a:hover{
@@ -142,18 +145,6 @@ ul li {
 
 .main-container .main-mid ul li:first-child a {
     border-bottom: 1px solid green;
-}
-
-.main-container {
-    overflow: auto;
-}
-
-.main-container .row-container {
-    overflow: auto;
-}
-
-.main-container .row-container .row {
-    overflow: auto;
 }
 
 .main-container .row-container .row-title {
